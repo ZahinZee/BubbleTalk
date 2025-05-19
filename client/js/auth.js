@@ -1,10 +1,10 @@
 // Signup
-const signupForm = document.getElementById("signupForm");
+const signupForm = document.getElementById("signup-form");
 if (signupForm) {
   signupForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-    const email = document.getElementById("signupEmail").value;
-    const password = document.getElementById("signupPassword").value;
+    const email = document.getElementById("signmail").value;
+    const password = document.getElementById("signpass").value;
 
     const res = await fetch("http://localhost:3000/api/auth/signup", {
       method: "POST",
@@ -23,8 +23,8 @@ const loginForm = document.getElementById("loginmail");
 if (loginForm) {
   loginForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-    const email = document.getElementById("loginEmail").value;
-    const password = document.getElementById("loginPassword").value;
+    const email = document.getElementById("loginmail").value;
+    const password = document.getElementById("logpass").value;
 
     const res = await fetch("http://localhost:3000/api/auth/login", {
       method: "POST",
