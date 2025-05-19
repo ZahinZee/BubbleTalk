@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="site-name">BubbleTalk</div>
+    <nav>
+      <a href="#">Profile</a>
+      <a href="#">Chats</a>
+    </nav>
+  </header>
+
+  <section class="signup-section">
+    <form class="signup-form">
+      <h2>Welcome!</h2>
+      <p>Please enter your details to signup</p>
+
+      <label for="name">Name</label>
+      <input type="name" id="signname" placeholder="enter your name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="signmail" placeholder="ex. abc@gmail.com" required />
+      <label for=" password"> Password</label> 
+      <input type="password" id="logpass" placeholder="at least 8 charactacter" required />
+
+    
+
+      <button type="submit" class="sign-btn">Login</button>
+
+      <div class="or">or</div>
+
+      <button type="button" class="google-btn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" />
+        Sign in with Google
+      </button>
+
+      <p class="login-text">Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </section>
+
+<script src="js/auth.js"></script>
+
+
+</body>
+</html>

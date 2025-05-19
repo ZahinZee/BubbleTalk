@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="site-name">BubbleTalk</div>
+    <nav>
+      <a href="#">Account</a>
+      <a href="#">Chats</a>
+    </nav>
+  </header>
+
+  <section class="login-section">
+    <form class="login-form">
+      <h2>Welcome Back!</h2>
+      <p>Please enter your details to login</p>
+
+      <label for="email">Email</label>
+      <input type="email" id="loginmail" placeholder="abc@gmail.com" required />
+
+      <div class="password-label">
+        <label for="password">Password</label>
+        <a href="#" class="forgot">Forgot password?</a>
+      </div>
+
+      <input type="password" id="logpass" placeholder="at least 8 char" required />
+
+      <div class="checkbox-row">
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember me</label>
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+
+      <div class="or">or</div>
+
+      <button type="button" class="google-btn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" />
+        Sign in with Google
+      </button>
+
+      <p class="signup-text">Don't have an account? <a href="homepage/signup.hrml">Register</a></p>
+    </form>
+  </section>
+
+<script src="js/auth.js"></script>
+
+
+</body>
+</html>
